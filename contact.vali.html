@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>javascript function</title>
+    </head>
+    <script>
+        function contactusvalidation(){
+            var uname=document.myform.username.value;
+            var password=document.myform.password.value;
+            if(uname== null || uname=="")
+            {
+                alert("name cant blank")
+                return false;
+            }
+             else if(password.length<6)
+            {
+                alert("passsword must be 6 letters")
+                return false;
+            }
+            return true
+        }
+    </script>
+    </head>
+    <style>
+        body{
+         background-image:url("con123.jpg") }
+         h1{text-align: center; }
+         body{
+        background-repeat: no-repeat;
+        background-size:cover ;
+        }
+        </style>
+        <style>
+            @media screen and (min-width: 600px) 
+      {
+      body{
+                background-image: url("con123.jpg");}
+                h1 { text-align: center; } }
+                body{
+            background-repeat: no-repeat;
+            background-size:cover ;
+            }
+    
+                @media screen and (min-width: 200px) and (max-width: 600px) {
+      body{
+                background-image: url("cont.jpg");}
+                h1 { text-align: center; } }
+                
+           </style>
+        <title>UI pages</title>
+    </head>
+    <body>
+    </h1>
+    <form name="myform" action="thankyou.html" onsubmit="return loginValidation(this)">
+        <h1>CONTACTUS</h1>
+        <h1>Full name : <input type="text" name="uname"><br></h1>
+        <br>
+        <h1>Mobile number:<input type="number" name="mobileno"><br></h1>
+        <br>
+      <h1>Email:<input type="text" name="ename"><br></h1>
+        <br>
+        <h1>message:</h1>
+        <h1><textarea name="mytext" cols="45" row="35"></textarea></h1>
+        <h1><input type="submit" value="contactus"></h1>
+    </textarea>
+    </body>
+    
+    
